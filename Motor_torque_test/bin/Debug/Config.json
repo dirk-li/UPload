@@ -1,0 +1,9 @@
+{
+  "COM": "COM10",
+  "BaudRate": "9600",
+  "ProName": "Stratos",
+  "MAX_UPlimit": "2040",
+  "MAX_Lowlimit": "800",
+  "Average_UPlimit": "1800",
+  "Average_Lowlimit": "600"
+}

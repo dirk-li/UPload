@@ -1,0 +1,23 @@
+{
+  "1920*1080": {
+    "ROI1": "36,180,167,144",
+    "ROI2": "500,166,133,148",
+    "ROI3": "500,397,144,143",
+    "ROI4": "44,396,138,139",
+    "ROI5": "233,275,169,128"
+  },
+  "prefer_focus": "35,10,15,30,25",
+  "starting_label_to_detect": "Start [B] 4K 4Corner UD ?",
+  "focus_setting_interval": "5",
+  "save_image": "false",
+  "run_kinetic_bat_file_path": ".\\run_kinetic.bat",
+  "kinetic_exe_name": "KineticTDETestPlatform",
+  "kinetic_res_file": "C:\\tstplan\\TEST_STATUS.txt",
+  "COM": "COM3",
+  "MouseClickExecuteBtnPosi_x_y": "50,100",
+  "IsForVCCellLine": "false",
+  "IsNoDragFocusBarGUI": "fasle",
+  "ProName": "Logitech BRIO",
+  "Auto_Close_Dialog_Title": "new_title1;new_title2",
+  "Retry_Number": "0"
+}

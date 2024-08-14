@@ -1,0 +1,11 @@
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\bin\Debug\Bolide Angle Test.exe.config
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\obj\Debug\Bolide Angle Test.csprojResolveAssemblyReference.cache
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\obj\Debug\Bolide Angle Test.csproj.ResolveComReference.cache
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\obj\Debug\Bolide_Angle_Test.Frm_Main.resources
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\obj\Debug\Bolide_Angle_Test.Form2.resources
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\obj\Debug\Bolide_Angle_Test.Properties.Resources.resources
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\obj\Debug\Bolide Angle Test.csproj.GenerateResource.Cache
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\bin\Debug\Bolide Angle Test.exe
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\bin\Debug\Bolide Angle Test.pdb
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\obj\Debug\Bolide Angle Test.exe
+C:\VS\tool\Bolide Angle Test\Bolide Angle Test\obj\Debug\Bolide Angle Test.pdb

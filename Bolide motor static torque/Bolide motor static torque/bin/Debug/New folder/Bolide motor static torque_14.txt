@@ -1,0 +1,908 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.IO.Ports;
+using inifile;
+using System.Reflection;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
+using System.Windows.Forms.DataVisualization.Charting;
+
+namespace Bolide_motor_static_torque
+{
+    public partial class Bolide_motor_static_torque : Form
+    {
+        private float X;//当前窗体的宽度
+        private float Y;//当前窗体的高度
+
+        [DllImport("kernel32.dll")]
+        public static extern IntPtr _lopen(string IpPathname, int iReadWrite);
+
+        [DllImport("kernel32.dll")]
+        public static extern bool CloseHandle(IntPtr hObject);
+        public const int OF_READWRITE = 2;
+        public const int OF_SHARE_DENY_NONE = 0x40;
+        public readonly IntPtr HFILE_ERROR = new IntPtr(-1);
+
+        private static SerialPort port;
+        public Bolide_motor_static_torque()
+        {
+            InitializeComponent();
+
+            openport_btn.Text = "打开串口";
+
+            toolStripComboBox1.Text = "COM10";
+
+        }
+
+        private void Start_btn_Click(object sender, EventArgs e)
+        {
+            cleardata();
+
+            if (openport_btn.Text == "关闭串口")
+            {
+                string currentPath = Directory.GetCurrentDirectory();
+
+                //Pan static friction force
+                string filepath = currentPath + "\\static_torque_spec.ini";
+                string pan_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_force_max_spec", null, filepath);
+                string pan_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_force_min_spec", null, filepath);
+                string[] pan_max_spec_array = new string[] { pan_max_spec };
+                string[] pan_min_spec_array = new string[] { pan_min_spec };
+                string[] panstatictorque_value = get_value("pan static torque", currentPath + "\\panstatictorque_value.txt");
+                string[] panstatictorque = getcomdata(panstatictorque_value);
+                string[] panstatictorque_mergearray = merge_array(pan_max_spec_array,pan_min_spec_array,panstatictorque);
+                int[] panfrictionforce = TointArray(panstatictorque_mergearray);
+                result_compare(panfrictionforce, "The pan static frictional force");
+                int[] panstatictorque_chart = TointArray(panstatictorque_value);
+                chart1_torque(panstatictorque_chart);
+
+                //Tilt static friction force
+                string tilt_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_force_max_spec", null, filepath);
+                string tilt_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_force_min_spec", null, filepath);
+                string[] tilt_max_spec_array = new string[] { tilt_max_spec };
+                string[] tilt_min_spec_array = new string[] { tilt_min_spec };
+                string[] tiltstatictorque_value = get_value("tilt static torque", currentPath + "\\tiltstatictorque_value.txt");
+                string[] tiltstatictorque = getcomdata(tiltstatictorque_value);
+                string[] tiltstatictorque_mergearray = merge_array(tilt_max_spec_array,tilt_min_spec_array,tiltstatictorque);
+                int[] tiltfrictionforce = TointArray(tiltstatictorque_mergearray);
+                result_compare(tiltfrictionforce, "The tilt static frictional force");
+                int[] tiltstatictorque_chart = TointArray(tiltstatictorque_value);
+                chart5_torque(tiltstatictorque_chart);
+
+               // pan low speed 
+                string pan_lowspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_lowspeed_max_spec", null, filepath);
+                string pan_lowspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_lowspeed_min_spec", null, filepath);
+                string[] pan_lowspeed_max_spec_array = new string[] { pan_lowspeed_max_spec };
+                string[] pan_lowspeed_min_spec_array = new string[] { pan_lowspeed_min_spec };
+                string[] pan_low_speed_value = get_value("pan low speed", currentPath + "\\panlowspeed_value.txt");
+                string[] panlowspeed = getcomdata(pan_low_speed_value);
+                string[] panlowspeed_mergearray = merge_array(pan_lowspeed_max_spec_array,pan_lowspeed_min_spec_array,panlowspeed);
+                int[] panlowspeed_value = TointArray(panlowspeed_mergearray);
+                result_compare(panlowspeed_value, "The pan low speed");
+                int[] pan_low_speed_value_chart = TointArray(pan_low_speed_value);
+                chart2_torque(pan_low_speed_value_chart);
+
+                // pan medium speed 
+                string pan_mediumspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_mediumspeed_max_spec", null, filepath);
+                string pan_mediumspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_mediumspeed_min_spec", null, filepath);
+                string[] pan_mediumspeed_max_spec_array = new string[] { pan_mediumspeed_max_spec };
+                string[] pan_mediumspeed_min_spec_array = new string[] { pan_mediumspeed_min_spec };
+                string[] pan_medium_speed_value = get_value("pan medium speed", currentPath + "\\panmediumspeed_value.txt");
+                string[] panmediumspeed = getcomdata(pan_medium_speed_value);      
+                string[] panmediumspeed_mergearray = merge_array(pan_mediumspeed_max_spec_array, pan_mediumspeed_min_spec_array,panmediumspeed);
+                int[] panmediumspeed_value = TointArray(panmediumspeed_mergearray);
+                result_compare(panmediumspeed_value, "The pan medium speed");
+                int[] pan_medium_speed_value_chart = TointArray(pan_medium_speed_value);
+                chart3_torque(pan_medium_speed_value_chart);
+
+                // pan High speed 
+                string pan_highspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_highspeed_max_spec", null, filepath);
+                string pan_highspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_highspeed_min_spec", null, filepath);
+                string[] pan_highspeed_max_spec_array = new string[] { pan_highspeed_max_spec };
+                string[] pan_highspeed_min_spec_array = new string[] { pan_highspeed_min_spec };
+                string[] pan_high_speed_value = get_value("pan high speed", currentPath + "\\panhighspeed_value.txt");
+                string[] panhighspeed = getcomdata(pan_high_speed_value);
+                string[] panhighspeed_mergearray = merge_array(pan_highspeed_max_spec_array, pan_highspeed_min_spec_array,panhighspeed);
+                int[] panhighspeed_value = TointArray(panhighspeed_mergearray);
+                result_compare(panhighspeed_value, "The pan high speed");
+                int[] pan_high_speed_value_chart = TointArray(pan_high_speed_value);
+                chart4_torque(pan_high_speed_value_chart);
+
+                // tilt low speed 
+                string tilt_lowspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_lowspeed_max_spec", null, filepath);
+                string tilt_lowspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_lowspeed_min_spec", null, filepath);
+                string[] tilt_lowspeed_max_spec_array = new string[] { tilt_lowspeed_max_spec };
+                string[] tilt_lowspeed_min_spec_array = new string[] { tilt_lowspeed_min_spec };
+                string[] tilt_low_speed_value = get_value("tilt low speed", currentPath + "\\tiltlowspeed_value.txt");
+                string[] tiltlowspeed = getcomdata(tilt_low_speed_value);
+                string[] tiltlowspeed_mergearray = merge_array(tilt_lowspeed_max_spec_array, tilt_lowspeed_min_spec_array,tiltlowspeed);
+                int[] tiltlowspeed_value = TointArray(tiltlowspeed_mergearray);
+                result_compare(tiltlowspeed_value, "The tilt low speed");
+                int[] tilt_low_speed_value_chart = TointArray(tilt_low_speed_value);
+                chart6_torque(tilt_low_speed_value_chart);
+                // tilt medium speed 
+                string tilt_mediumspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_mediumspeed_max_spec", null, filepath);
+                string tilt_mediumspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_mediumspeed_min_spec", null, filepath);
+                string[] tilt_mediumspeed_max_spec_array = new string[] { tilt_mediumspeed_max_spec };
+                string[] tilt_mediumspeed_min_spec_array = new string[] { tilt_mediumspeed_min_spec };
+                string[] tilt_medium_speed_value = get_value("tilt medium speed", currentPath + "\\tiltmediumspeed_value.txt");
+                string[] tiltmediumspeed = getcomdata(tilt_medium_speed_value);
+                string[] tiltmediumspeed_mergearray = merge_array(tilt_mediumspeed_max_spec_array, tilt_mediumspeed_min_spec_array,tiltmediumspeed);
+                int[] tiltmediumspeed_value = TointArray(tiltmediumspeed_mergearray);
+                result_compare(tiltmediumspeed_value, "The tilt medium speed");
+                int[] tilt_medium_speed_value_chart = TointArray(tilt_medium_speed_value);
+                chart7_torque(tilt_medium_speed_value_chart);
+
+                // tilt High speed 
+                string tilt_highspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_highspeed_max_spec", null, filepath);
+                string tilt_highspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_highspeed_min_spec", null, filepath);
+                string[] tilt_highspeed_max_spec_array = new string[] { tilt_highspeed_max_spec };
+                string[] tilt_highspeed_min_spec_array = new string[] { tilt_highspeed_min_spec };
+                string[] tilt_high_speed_value = get_value("tilt high speed", currentPath + "\\tilthighspeed_value.txt");
+                string[] tilthighspeed = getcomdata(tilt_high_speed_value);
+                string[] tilthighspeed_mergearray = merge_array(tilt_highspeed_max_spec_array, tilt_highspeed_min_spec_array,tilthighspeed);
+                int[] tilthighspeed_value = TointArray(tilthighspeed_mergearray);
+                result_compare(tilthighspeed_value, "The tilt high speed");
+                int[] tilt_high_speed_value_chart = TointArray(tilt_high_speed_value);
+                chart8_torque(tilt_high_speed_value_chart);
+
+                string result_string=result_rtb.Text;
+                if (result_string.Contains("FAIL"))
+                    {
+                        Result_btn.Text = "FAIL";
+                        Result_btn.BackColor = Color.Red;
+
+                    }
+                    else
+                    {
+                        Result_btn.Text = "PASS";
+                        Result_btn.BackColor = Color.GreenYellow;
+
+                    }
+
+
+                //string[] panlowspeed = new string[] {"123","150","100"};
+               // string[] panmediumspeed = new string[] { "205","250","180" };
+               // string[] panhighspeed = new string[] { "362","400","350" };
+              //  string[] tiltlowspeed = new string[] { "104", "150", "100" };
+              //  string[] tiltmediumspeed = new string[] { "263", "250", "180" };
+              //  string[] tilthighspeed = new string[] { "435", "400", "350" };
+                string[] showitem = new string[] { "MAX SPEC", "MIN SPEC", "VALUE" };
+                show_datagardview(showitem, panstatictorque_mergearray, panlowspeed_mergearray, panmediumspeed_mergearray, panhighspeed_mergearray, tiltstatictorque_mergearray, tiltlowspeed_mergearray, tiltmediumspeed_mergearray, tilthighspeed_mergearray);
+
+                //使用Chart 画 出测试数据的波形图
+               // chart1_torque(panstatictorque_chart, tiltstatictorque_chart, pan_low_speed_value_chart, pan_medium_speed_value_chart, pan_high_speed_value_chart, tilt_low_speed_value_chart, tilt_medium_speed_value_chart, tilt_high_speed_value_chart);
+                
+                
+                
+                
+                
+                string[] myrow = File.ReadAllLines(currentPath + "\\row.txt");
+                int row = int.Parse(myrow[0]);
+                string[] writedata = coalescing_array(panstatictorque, tiltstatictorque, panlowspeed, panmediumspeed, panhighspeed, tiltlowspeed, tiltmediumspeed, tilthighspeed);
+                int[] col = creatcolumn(writedata.Length,2);
+                WriteExcel(currentPath + "\\static_torque-results.csv", row, col, writedata);
+                row = row + 1;
+                File.WriteAllText(currentPath + "\\row.txt", row.ToString());
+
+            }
+            else
+            {
+                MessageBox.Show("请打开串口");
+            }
+
+
+           
+        }
+
+        //从COM 口获取数据
+        /*
+        public static string[] getcomdata(string inputstr)
+        {
+            port.Write(inputstr);
+            System.Threading.Thread.Sleep(100);
+            string recstr = port.ReadExisting();
+            string[] recdata = recstr.Split(' ');
+           if (recdata[0].Length == 2)
+           {
+               recdata[0] = "0";
+           }
+        
+            return recdata;
+        }
+        */
+        public static string[] get_value(string inputstr,string filepath)
+        {
+            port.Write(inputstr);
+            string[] recvalue = new string[10];
+           
+            //System.Threading.Thread.Sleep(1000);
+            for (int j = 0; j < 10; j++)
+            {
+                string recstr = (int.Parse(port.ReadLine()) * 2040 / 1024).ToString();
+
+                if (recstr.Length == 0)
+                {
+                    recvalue[j] = "0";
+                }
+                else
+                {
+                    recvalue[j] = recstr;
+                }
+
+                System.Threading.Thread.Sleep(300);
+            }
+            File.WriteAllLines(filepath,recvalue);
+            return recvalue;
+        }
+        public static string[] getcomdata(string[] strarray)
+        {
+            String[] recdata = new string[1];
+            int a=0;
+            for (int i = 0; i < strarray.Length; i++)
+            {
+                if (a < int.Parse(strarray[i]))
+                {
+                    a = int.Parse(strarray[i]);
+                }
+                recdata[0] = a.ToString();
+            }
+
+            //File.WriteAllLines(filepanth, recdata);
+            return recdata;
+        }
+
+        //将字符串数组转化成int 数组 
+        public static int[] TointArray(string[] strarray)
+        {
+
+            int[] data = new int[strarray.Length];
+
+            for (int i = 0; i < strarray.Length; i++)
+            {
+
+                data[i] =int.Parse(strarray[i]);
+
+            }
+            return data;
+        }
+
+
+        //比对静态摩擦力
+        public void result_compare(int[] value,string returnstr)
+        {
+                if (value[2] > value[0])
+                {
+                    richshow(returnstr+ " Test FAIL", Color.Red);
+                    return;
+                }
+                else if (value[2] < value[1])
+                {
+                    richshow(returnstr + " Test FAIL", Color.Red);
+                    return;
+                }
+                else
+                {
+                    richshow(returnstr + " Test PASS", Color.Green);
+                }
+        }
+
+        //在richbox 显示每一项测试结果
+        public void richshow(string context,Color color)
+        {
+            result_rtb.SelectionColor = color;
+            result_rtb.AppendText(context+"\r\n");
+ 
+        }
+        //在Griddataview 里显示测试数值 
+        public void show_datagardview(string[] data1, string[] data2, string[] data3, string[] data4, string[] data5, string[] data6, string[] data7, string[] data8, string[] data9)
+        {
+            dataGridView1.Rows.Clear();
+            //DataGridViewContentAlignment.MiddleCenter;
+            //dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnMode.AllCells);
+            string[][] data = value(data1, data2, data3, data4, data5, data6, data7, data8, data9);
+            for (int i = 0; i < data1.Length; i++)
+            {
+                dataGridView1.Rows.Add(data[i]);
+            }
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.AliceBlue;
+        }
+        public static string[][] value(string[] array1, string[] array2, string[] array3, string[] array4, string[] array5, string[] array6, string[] array7, string[] array8, string[] array9)
+        {
+            string[][] array = new string[3][];
+            for (int i = 0; i < 3; i++)
+            {
+
+                array[i] = new string[] { array1[i], array2[i], array3[i], array4[i], array5[i], array6[i], array7[i], array8[i], array9[i] };
+            }
+            return array;
+        }
+
+        //将MAX，MIN，DATA数组 合并到一个数组
+        public static string[] merge_array(string[] array1,string[] array2,string[] array3 )
+        { 
+            string[] array=new string[3];
+            array[0] = array1[0];
+            array[1] = array2[0];
+            array[2] = array3[0];
+            return array;
+        }
+
+        public static string[] coalescing_array(string[] array1, string[] array2, string[] array3, string[] array4, string[] array5, string[] array6, string[] array7, string[] array8)
+        {
+
+            string[] array = new string[8];
+            array[0] = array1[0];
+            array[1] = array2[0];
+            array[2] = array3[0];
+            array[3] = array4[0];
+            array[4] = array5[0];
+            array[5] = array6[0];
+            array[6] = array7[0];
+            //MessageBox.Show(array[6]);
+            //MessageBox.Show(array8[0]);
+            array[7] = array8[0];
+            return array;
+        }
+        public static int[] creatcolumn(int length,int value)
+        {
+            int[] column = new int[length];
+            for (int i = 0; i < length; i++)
+            {
+                column[i] = i + value;
+
+            }
+            return column;
+        }
+        public void chart1_torque(int[] value1)
+        {
+            chart1.Series.Clear();
+            chart1.Legends[0].Enabled = true;
+            chart1.Legends[0].BackColor = Color.Transparent;
+            chart1.BackColor = Color.Transparent;
+            chart1.ChartAreas[0].AxisX.Minimum = 0;
+            chart1.ChartAreas[0].AxisX.Maximum = 10;
+            chart1.ChartAreas[0].AxisY.Minimum = 0;
+            chart1.ChartAreas[0].AxisY.Maximum = 2040;
+            chart1.ChartAreas[0].AxisX.Interval = 1;
+            chart1.ChartAreas[0].AxisY.Interval = 120;
+            chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chart1.ChartAreas[0].BackColor = Color.Transparent;
+
+            Series series1 = new Series("pan static torque");
+           
+            series1.ChartType = SeriesChartType.Line;
+            series1.BorderWidth = 1;
+            series1.ShadowOffset = 1;
+            series1.Color = Color.Red;
+            series1.MarkerStyle = MarkerStyle.Circle;
+            series1.MarkerColor = Color.Blue;
+            series1.MarkerBorderWidth = 1;
+            series1.MarkerSize = 3;
+            series1.IsValueShownAsLabel = true;
+            series1.ToolTip = "当前值：#VAL\n 最高值：#MAX\n 最低值：#MIN\n";
+            //判断测试值是否超出了limit 范围
+            for (int i = 0; i < value1.Length; i++)
+            {
+                series1.Points.AddY(value1[i]);
+            }
+            chart1.Series.Add(series1);
+       
+        }
+        public void chart2_torque(int[] value1)
+        {
+            chart2.Series.Clear();
+            chart2.Legends[0].Enabled = true;
+            chart2.Legends[0].BackColor = Color.Transparent;
+            chart2.BackColor = Color.Transparent;
+            chart2.ChartAreas[0].AxisX.Minimum = 0;
+            chart2.ChartAreas[0].AxisX.Maximum = 10;
+            chart2.ChartAreas[0].AxisY.Minimum = 0;
+            chart2.ChartAreas[0].AxisY.Maximum = 2040;
+            chart2.ChartAreas[0].AxisX.Interval = 1;
+            chart2.ChartAreas[0].AxisY.Interval = 120;
+            chart2.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chart2.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chart2.ChartAreas[0].BackColor = Color.Transparent;
+            Series series1 = new Series("pan low speed torque");
+            series1.ChartType = SeriesChartType.Line;
+            series1.BorderWidth = 1;
+            series1.ShadowOffset = 1;
+            series1.Color = Color.Red;
+            series1.MarkerStyle = MarkerStyle.Circle;
+            series1.MarkerColor = Color.Blue;
+            series1.MarkerBorderWidth = 1;
+            series1.MarkerSize = 3;
+            series1.IsValueShownAsLabel = true;
+            series1.ToolTip = "当前值：#VAL\n 最高值：#MAX\n 最低值：#MIN\n";
+            //判断测试值是否超出了limit 范围
+            for (int i = 0; i < value1.Length; i++)
+            {
+                series1.Points.AddY(value1[i]);
+            }
+            chart2.Series.Add(series1);
+
+        }
+        public void chart3_torque(int[] value1)
+        {
+            chart3.Series.Clear();
+            chart3.Legends[0].Enabled = true;
+            chart3.Legends[0].BackColor = Color.Transparent;
+            chart3.BackColor = Color.Transparent;
+            chart3.ChartAreas[0].AxisX.Minimum = 0;
+            chart3.ChartAreas[0].AxisX.Maximum = 10;
+            chart3.ChartAreas[0].AxisY.Minimum = 0;
+            chart3.ChartAreas[0].AxisY.Maximum = 2040;
+            chart3.ChartAreas[0].AxisX.Interval = 1;
+            chart3.ChartAreas[0].AxisY.Interval = 120;
+            chart3.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chart3.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chart3.ChartAreas[0].BackColor = Color.Transparent;
+            Series series1 = new Series("pan medium speed torque");
+            series1.ChartType = SeriesChartType.Line;
+            series1.BorderWidth = 1;
+            series1.ShadowOffset = 1;
+            series1.Color = Color.Red;
+            series1.MarkerStyle = MarkerStyle.Circle;
+            series1.MarkerColor = Color.Blue;
+            series1.MarkerBorderWidth = 1;
+            series1.MarkerSize = 3;
+            series1.IsValueShownAsLabel = true;
+            series1.ToolTip = "当前值：#VAL\n 最高值：#MAX\n 最低值：#MIN\n";
+            //判断测试值是否超出了limit 范围
+            for (int i = 0; i < value1.Length; i++)
+            {
+                series1.Points.AddY(value1[i]);
+            }
+            chart3.Series.Add(series1);
+
+        }
+        public void chart4_torque(int[] value1)
+        {
+            chart4.Series.Clear();
+            chart4.Legends[0].Enabled = true;
+            chart4.Legends[0].BackColor = Color.Transparent;
+            chart4.BackColor = Color.Transparent;
+            chart4.ChartAreas[0].AxisX.Minimum = 0;
+            chart4.ChartAreas[0].AxisX.Maximum = 10;
+            chart4.ChartAreas[0].AxisY.Minimum = 0;
+            chart4.ChartAreas[0].AxisY.Maximum = 2040;
+            chart4.ChartAreas[0].AxisX.Interval = 1;
+            chart4.ChartAreas[0].AxisY.Interval = 120;
+            chart4.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chart4.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chart4.ChartAreas[0].BackColor = Color.Transparent;
+            Series series1 = new Series("pan high speed torque");
+            series1.ChartType = SeriesChartType.Line;
+            series1.BorderWidth = 1;
+            series1.ShadowOffset = 1;
+            series1.Color = Color.Red;
+            series1.MarkerStyle = MarkerStyle.Circle;
+            series1.MarkerColor = Color.Blue;
+            series1.MarkerBorderWidth = 1;
+            series1.MarkerSize = 3;
+            series1.IsValueShownAsLabel = true;
+            series1.ToolTip = "当前值：#VAL\n 最高值：#MAX\n 最低值：#MIN\n";
+            //判断测试值是否超出了limit 范围
+            for (int i = 0; i < value1.Length; i++)
+            {
+                series1.Points.AddY(value1[i]);
+            }
+            chart4.Series.Add(series1);
+
+        }
+        public void chart5_torque(int[] value1)
+        {
+            chart5.Series.Clear();
+            chart5.Legends[0].Enabled = true;
+            chart5.Legends[0].BackColor = Color.Transparent;
+            chart5.BackColor = Color.Transparent;
+            chart5.ChartAreas[0].AxisX.Minimum = 0;
+            chart5.ChartAreas[0].AxisX.Maximum = 10;
+            chart5.ChartAreas[0].AxisY.Minimum = 0;
+            chart5.ChartAreas[0].AxisY.Maximum = 2040;
+            chart5.ChartAreas[0].AxisX.Interval = 1;
+            chart5.ChartAreas[0].AxisY.Interval = 120;
+            chart5.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chart5.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chart5.ChartAreas[0].BackColor = Color.Transparent;
+            Series series1 = new Series("tilt static torque");
+            series1.ChartType = SeriesChartType.Line;
+            series1.BorderWidth = 1;
+            series1.ShadowOffset = 1;
+            series1.Color = Color.Green;
+            series1.MarkerStyle = MarkerStyle.Circle;
+            series1.MarkerColor = Color.Blue;
+            series1.MarkerBorderWidth = 1;
+            series1.MarkerSize = 3;
+            series1.IsValueShownAsLabel = true;
+            series1.ToolTip = "当前值：#VAL\n 最高值：#MAX\n 最低值：#MIN\n";
+            //判断测试值是否超出了limit 范围
+            for (int i = 0; i < value1.Length; i++)
+            {
+                series1.Points.AddY(value1[i]);
+            }
+            chart5.Series.Add(series1);
+        }
+
+        public void chart6_torque(int[] value1)
+        {
+            chart6.Series.Clear();
+            chart6.Legends[0].Enabled = true;
+            chart6.Legends[0].BackColor = Color.Transparent;
+            chart6.BackColor = Color.Transparent;
+            chart6.ChartAreas[0].AxisX.Minimum = 0;
+            chart6.ChartAreas[0].AxisX.Maximum = 10;
+            chart6.ChartAreas[0].AxisY.Minimum = 0;
+            chart6.ChartAreas[0].AxisY.Maximum = 2040;
+            chart6.ChartAreas[0].AxisX.Interval = 1;
+            chart6.ChartAreas[0].AxisY.Interval = 120;
+            chart6.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chart6.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chart6.ChartAreas[0].BackColor = Color.Transparent;
+            Series series1 = new Series("tilt low speed torque");
+            series1.ChartType = SeriesChartType.Line;
+            series1.BorderWidth = 1;
+            series1.ShadowOffset = 1;
+            series1.Color = Color.Green;
+            series1.MarkerStyle = MarkerStyle.Circle;
+            series1.MarkerColor = Color.Blue;
+            series1.MarkerBorderWidth = 1;
+            series1.MarkerSize = 3;
+            series1.IsValueShownAsLabel = true;
+            series1.ToolTip = "当前值：#VAL\n 最高值：#MAX\n 最低值：#MIN\n";
+            //判断测试值是否超出了limit 范围
+            for (int i = 0; i < value1.Length; i++)
+            {
+                series1.Points.AddY(value1[i]);
+            }
+            chart6.Series.Add(series1);
+        }
+        public void chart7_torque(int[] value1)
+        {
+            chart7.Series.Clear();
+            chart7.Legends[0].Enabled = true;
+            chart7.Legends[0].BackColor = Color.Transparent;
+            chart7.BackColor = Color.Transparent;
+            chart7.ChartAreas[0].AxisX.Minimum = 0;
+            chart7.ChartAreas[0].AxisX.Maximum = 10;
+            chart7.ChartAreas[0].AxisY.Minimum = 0;
+            chart7.ChartAreas[0].AxisY.Maximum = 2040;
+            chart7.ChartAreas[0].AxisX.Interval = 1;
+            chart7.ChartAreas[0].AxisY.Interval = 120;
+            chart7.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chart7.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chart7.ChartAreas[0].BackColor = Color.Transparent;
+            Series series1 = new Series("tilt medium speed torque");
+            series1.ChartType = SeriesChartType.Line;
+            series1.BorderWidth = 1;
+            series1.ShadowOffset = 1;
+            series1.Color = Color.Green; 
+            series1.MarkerStyle = MarkerStyle.Circle;
+            series1.MarkerColor = Color.Blue;
+            series1.MarkerBorderWidth = 1;
+            series1.MarkerSize = 3;
+            series1.IsValueShownAsLabel = true;
+            series1.ToolTip = "当前值：#VAL\n 最高值：#MAX\n 最低值：#MIN\n";
+            //判断测试值是否超出了limit 范围
+            for (int i = 0; i < value1.Length; i++)
+            {
+                series1.Points.AddY(value1[i]);
+            }
+            chart7.Series.Add(series1);
+        }
+        public void chart8_torque(int[] value1)
+        {
+            chart8.Series.Clear();
+            chart8.Legends[0].Enabled = true;
+            chart8.Legends[0].BackColor = Color.Transparent;
+            chart8.BackColor = Color.Transparent;
+            chart8.ChartAreas[0].AxisX.Minimum = 0;
+            chart8.ChartAreas[0].AxisX.Maximum = 10;
+            chart8.ChartAreas[0].AxisY.Minimum = 0;
+            chart8.ChartAreas[0].AxisY.Maximum = 2040;
+            chart8.ChartAreas[0].AxisX.Interval = 1;
+            chart8.ChartAreas[0].AxisY.Interval = 120;
+            chart8.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chart8.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chart8.ChartAreas[0].BackColor = Color.Transparent;
+            Series series1 = new Series("tilt high speed torque");
+            series1.ChartType = SeriesChartType.Line;
+            series1.BorderWidth = 1;
+            series1.ShadowOffset = 1;
+            series1.Color = Color.Green;
+            series1.MarkerStyle = MarkerStyle.Circle;
+            series1.MarkerColor = Color.Blue;
+            series1.MarkerBorderWidth = 1;
+            series1.MarkerSize = 3;
+            series1.IsValueShownAsLabel = true;
+            series1.ToolTip = "当前值：#VAL\n 最高值：#MAX\n 最低值：#MIN\n";
+            //判断测试值是否超出了limit 范围
+            for (int i = 0; i < value1.Length; i++)
+            {
+                series1.Points.AddY(value1[i]);
+            }
+            chart8.Series.Add(series1);
+        }
+
+        public void WriteExcel(string filename, int row, int[] col, string[] mystr)
+        {
+            //new an excel object
+            Excel.Workbook workBook;
+            Excel.Application excelApp = new Excel.ApplicationClass();
+            excelApp.Visible = false;
+            if (excelApp == null)
+            {
+                // if equal null means EXCEL is not installed.
+                MessageBox.Show("Excel is not properly installed!");
+                return;
+            }
+            // open a workbook,if not exist, create a new one Excel.Workbook workBook;
+            if (File.Exists(filename))
+            {
+                workBook = excelApp.Workbooks.Open(filename, 0, false, 5, "", "", true, Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
+            }
+            else
+            {
+                workBook = excelApp.Workbooks.Add(true);
+            }
+
+            //new a worksheet
+            Excel.Worksheet workSheet = workBook.ActiveSheet as Excel.Worksheet;
+
+            //write data
+            workSheet = (Excel.Worksheet)workBook.Worksheets.get_Item(1);//获得第i个sheet，准备写入
+            for (int i = 0; i < col.Length; i++)
+            {
+                workSheet.Cells[row, col[i]] = mystr[i];
+            }
+
+            //set visible the Excel will run in background
+            excelApp.Visible = false;
+            //set false the alerts will not display
+            excelApp.DisplayAlerts = false;
+
+            workBook.SaveAs(filename, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Excel.XlSaveAsAccessMode.xlNoChange, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value);
+            //workBook.SaveAs(filename);
+            workBook.Close(false, Missing.Value, Missing.Value);
+
+            //quit and clean up objects
+            excelApp.Quit();
+            workSheet = null;
+            workBook = null;
+            excelApp = null;
+            GC.Collect();
+        }
+
+        public void WriteExcel_tilt(string filename, int row, int[] col, string[] str_header)
+        {
+            //new an excel object
+            Excel.Workbook workBook;
+            Excel.Application excelApp = new Excel.ApplicationClass();
+            excelApp.Visible = false;
+            if (excelApp == null)
+            {
+                // if equal null means EXCEL is not installed.
+                MessageBox.Show("Excel is not properly installed!");
+                return;
+            }
+            // open a workbook,if not exist, create a new one Excel.Workbook workBook;
+            if (File.Exists(filename))
+            {
+                workBook = excelApp.Workbooks.Open(filename, 0, false, 5, "", "", true, Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
+            }
+            else
+            {
+                workBook = excelApp.Workbooks.Add(true);
+            }
+
+            //new a worksheet
+            Excel.Worksheet workSheet = workBook.ActiveSheet as Excel.Worksheet;
+            workSheet.Columns.EntireColumn.AutoFit();//列宽自适应
+            //write data
+            workSheet = (Excel.Worksheet)workBook.Worksheets.get_Item(1);//获得第i个sheet，准备写入
+
+            for (int i = 0; i < col.Length; i++)
+            {
+                workSheet.Cells[row, col[i]] = str_header[i];
+            }
+
+            //set visible the Excel will run in background
+            excelApp.Visible = false;
+            //set false the alerts will not display
+            excelApp.DisplayAlerts = false;
+
+            workBook.SaveAs(filename, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Excel.XlSaveAsAccessMode.xlNoChange, Missing.Value, Missing.Value, Missing.Value, Missing.Value, Missing.Value);
+            //workBook.SaveAs(filename);
+            workBook.Close(false, Missing.Value, Missing.Value);
+
+            //quit and clean up objects
+            excelApp.Quit();
+            workSheet = null;
+            workBook = null;
+            excelApp = null;
+            GC.Collect();
+        }
+        private void Result_btn_Click(object sender, EventArgs e)
+        {
+
+
+        }
+        public static string[] excelhandel(string str1,string str2,string str3,string str4,string str5,string str6,string str7,string str8,string str9)
+        {
+            string[] array=new string[9];
+            array[0] = str1;
+            array[1] = str2;
+            array[2] = str3;
+            array[3] = str4;
+            array[4] = str5;
+            array[5] = str6;
+            array[6] = str7;
+            array[7] = str8;
+            array[8] = str9;
+            return array;
+        }
+
+
+        private void Bolide_motor_static_torque_Load(object sender, EventArgs e)
+        {
+            X = this.Width;//获取窗体的宽度
+            Y = this.Height;//获取窗体的高度
+            setTag(this);//调用方法
+
+            //this.WindowState = FormWindowState.Maximized;
+            string currentPath = Directory.GetCurrentDirectory();
+            string filepath = currentPath + "\\static_torque_spec.ini";
+            string[] spec_handel = new string[] { " ","pantorque", "tilttorque", "panlowspeed", "panmediumspeed", "panhighspeed", "tiltlowspeed", "tiltmediumspeed", "tilthighspeed" };
+            string pan_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_force_max_spec", null, filepath);
+            string pan_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_force_min_spec", null, filepath);
+            string tilt_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_force_max_spec", null, filepath);
+            string tilt_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_force_min_spec", null, filepath);
+            string pan_lowspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_lowspeed_max_spec", null, filepath);
+            string pan_lowspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_lowspeed_min_spec", null, filepath);
+            string pan_mediumspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_mediumspeed_max_spec", null, filepath);
+            string pan_mediumspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_mediumspeed_min_spec", null, filepath);
+            string pan_highspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_highspeed_max_spec", null, filepath);
+            string pan_highspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_highspeed_min_spec", null, filepath);
+            string tilt_lowspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_lowspeed_max_spec", null, filepath);
+            string tilt_lowspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_lowspeed_min_spec", null, filepath);
+            string tilt_mediumspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_mediumspeed_max_spec", null, filepath);
+            string tilt_mediumspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_mediumspeed_min_spec", null, filepath);
+            string tilt_highspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_highspeed_max_spec", null, filepath);
+            string tilt_highspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_highspeed_min_spec", null, filepath);
+
+            string[] handel_max = excelhandel("MAX_SPEC",pan_max_spec,tilt_max_spec,pan_lowspeed_max_spec,pan_mediumspeed_max_spec,pan_highspeed_max_spec,tilt_lowspeed_max_spec,tilt_mediumspeed_max_spec,tilt_highspeed_max_spec);
+            string[] handel_min = excelhandel("MIN_SPEC", pan_min_spec, tilt_min_spec, pan_lowspeed_min_spec, pan_mediumspeed_min_spec, pan_highspeed_min_spec, tilt_lowspeed_min_spec, tilt_mediumspeed_min_spec, tilt_highspeed_min_spec);
+
+            string filename = "static_torque - results_"+DateTime.Now.ToString("yyyyMMddHHmmss")+".csv";
+            if (File.Exists(currentPath + "\\static_torque-results.csv"))
+            {
+                //File.Copy(currentPath + "\\static_torque-results.csv", currentPath+"\\static_torque-results_backup.csv");
+                File.Copy(currentPath + "\\static_torque-results.csv", currentPath + "\\"+filename);
+            }
+            int[] col = creatcolumn(spec_handel.Length,1);
+            //int[] col = creatcolumn(static_torque_limitMax.Length);
+            IntPtr vHandle = _lopen(currentPath + "\\static_torque-results.csv", OF_READWRITE | OF_SHARE_DENY_NONE);
+            if (vHandle == HFILE_ERROR)
+            {
+                Process[] p_array = Process.GetProcesses();
+                for (int i = 0; i < p_array.Length; i++)
+                {
+                    if (p_array[i].ProcessName == "EXCEL")
+                    {
+                        p_array[i].Kill();
+
+                    }
+                }
+            }
+            CloseHandle(vHandle);
+            //Reading what row is input row in Excel
+            if (File.Exists(currentPath + "\\static_torque-results.csv"))
+            {
+                string[] myrow = File.ReadAllLines(currentPath + "\\row.txt");
+
+                int row = int.Parse(myrow[0]) + 2;
+
+                WriteExcel_tilt(currentPath + "\\static_torque-results.csv", row, col, spec_handel);
+                WriteExcel_tilt(currentPath + "\\static_torque-results.csv", row + 1, col,handel_max);
+                WriteExcel_tilt(currentPath + "\\static_torque-results.csv", row + 2, col, handel_min);
+                row = row + 3;
+                File.WriteAllText(currentPath + "\\row.txt", row.ToString());
+            }
+            else
+            {
+                int row = 1;
+
+                WriteExcel_tilt(currentPath + "\\static_torque-results.csv", row, col, spec_handel);
+                WriteExcel_tilt(currentPath + "\\static_torque-results.csv", row + 1, col, handel_max);
+                WriteExcel_tilt(currentPath + "\\static_torque-results.csv", row + 2, col, handel_min);
+                row = row + 3;
+                File.WriteAllText(currentPath + "\\row.txt", row.ToString());
+            }
+        }
+
+        private void openport_btn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            if (openport_btn.Text == "打开串口")
+            {
+
+                port = new SerialPort(toolStripComboBox1.Text);
+                port.BaudRate = int.Parse(toolStripTextBox1.Text);
+                port.DataBits = 8;
+                port.Handshake = Handshake.None;
+                port.Open();
+                openport_btn.Text = "关闭串口";
+                
+            }
+            else if (openport_btn.Text == "关闭串口")
+            {
+                port.Close();
+                //portstate();
+                openport_btn.Text = "打开串口";
+            }
+        }
+        public void cleardata()
+        {
+            result_rtb.Text = "";
+            result_rtb.AppendText("");
+            Result_btn.Text = "Testing";
+            Result_btn.BackColor = Color.Transparent;
+        }
+        // 将控件的宽，高，左边距，顶边距和字体大小暂存到tag属性中
+        private void setTag(Control cons)
+        {
+            foreach (Control con in cons.Controls)
+            {
+                con.Tag = con.Width + ":" + con.Height + ":" + con.Left + ":" + con.Top + ":" + con.Font.Size;
+                if (con.Controls.Count > 0)
+                    setTag(con);
+            }
+        }
+        //根据窗体大小调整控件大小
+        private void setControls(float newx, float newy, Control cons)
+        {
+            //遍历窗体中的控件，重新设置控件的值
+            foreach (Control con in cons.Controls)
+            {
+
+                string[] mytag = con.Tag.ToString().Split(new char[] { ':' });//获取控件的Tag属性值，并分割后存储字符串数组
+                float a = System.Convert.ToSingle(mytag[0]) * newx;//根据窗体缩放比例确定控件的值，宽度
+                con.Width = (int)a;//宽度
+                a = System.Convert.ToSingle(mytag[1]) * newy;//高度
+                con.Height = (int)(a);
+                a = System.Convert.ToSingle(mytag[2]) * newx;//左边距离
+                con.Left = (int)(a);
+                a = System.Convert.ToSingle(mytag[3]) * newy;//上边缘距离
+                con.Top = (int)(a);
+                Single currentSize = System.Convert.ToSingle(mytag[4]) * newy;//字体大小
+                con.Font = new Font(con.Font.Name, currentSize, con.Font.Style, con.Font.Unit);
+                if (con.Controls.Count > 0)
+                {
+                    setControls(newx, newy, con);
+                }
+            }
+        }
+
+        private void Bolide_motor_static_torque_Resize(object sender, EventArgs e)
+        {
+            float newx = (this.Width) / X; //窗体宽度缩放比例
+            float newy = (this.Height) / Y;//窗体高度缩放比例
+            setControls(newx, newy, this);//随窗体改变控件大小
+        }
+    }
+}

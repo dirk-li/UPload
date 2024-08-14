@@ -1,0 +1,38 @@
+2023-12-14 08:26:45,407 [1]INFO: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-12-14 08:26:45,409 [1]INFO:  Fireball motor static torque App start running.
+2023-12-14 08:26:47,488 [1]INFO: Not Found COM port 
+2023-12-14 08:27:28,916 [1]INFO: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-12-14 08:27:28,926 [1]INFO:  Fireball motor static torque App start running.
+2023-12-14 08:27:30,829 [1]INFO: Found COM port COM10
+2023-12-14 08:27:30,850 [1]INFO: Serial Port IsOpen True
+2023-12-14 08:27:30,851 [1]INFO: Serial Port ReadBufferSize 4096
+2023-12-14 08:28:05,274 [1]INFO: Show Motor torque test result_data.
+2023-12-14 10:05:48,190 [1]INFO: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-12-14 10:05:48,206 [1]INFO:  Fireball motor static torque App start running.
+2023-12-14 10:05:49,992 [1]INFO: Found COM port COM10
+2023-12-14 10:05:50,000 [1]INFO: Serial Port IsOpen True
+2023-12-14 10:05:50,003 [1]INFO: Serial Port ReadBufferSize 4096
+2023-12-14 10:12:53,095 [1]INFO: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-12-14 10:12:53,107 [1]INFO:  Fireball motor static torque App start running.
+2023-12-14 10:12:54,992 [1]INFO: Found COM port COM10
+2023-12-14 10:12:55,005 [1]INFO: Serial Port IsOpen True
+2023-12-14 10:12:55,006 [1]INFO: Serial Port ReadBufferSize 4096
+2023-12-18 13:38:35,055 [1]INFO: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-12-18 13:38:35,068 [1]INFO:  Fireball motor static torque App start running.
+2023-12-18 13:38:50,307 [1]INFO: Found COM port COM10
+2023-12-18 13:38:50,322 [1]INFO: Serial Port IsOpen True
+2023-12-18 13:38:50,324 [1]INFO: Serial Port ReadBufferSize 4096
+2023-12-18 13:39:29,701 [1]INFO: Show Motor torque test result_data.
+2023-12-18 13:40:46,323 [1]INFO: Show Motor torque test result_data.
+2023-12-18 13:42:53,131 [1]INFO: Show Motor torque test result_data.
+2023-12-18 13:45:37,469 [1]INFO: Show Motor torque test result_data.
+2023-12-18 13:46:54,917 [1]INFO: Show Motor torque test result_data.
+2023-12-18 14:37:24,577 [1]INFO: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-12-18 14:37:24,594 [1]INFO:  Fireball motor static torque App start running.
+2023-12-18 14:37:27,269 [1]INFO: Found COM port COM10
+2023-12-18 14:37:27,282 [1]INFO: Serial Port IsOpen True
+2023-12-18 14:37:27,284 [1]INFO: Serial Port ReadBufferSize 4096
+2023-12-18 14:38:08,951 [1]INFO: Show Motor torque test result_data.
+2023-12-18 14:41:59,185 [1]INFO: Show Motor torque test result_data.
+2023-12-18 14:43:26,434 [1]INFO: Show Motor torque test result_data.
+2023-12-18 14:45:21,179 [1]INFO: Show Motor torque test result_data.

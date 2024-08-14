@@ -1,0 +1,6 @@
+C:\VS\tool\VC_COM\VC_COM\bin\Debug\VC_COM.exe.config
+C:\VS\tool\VC_COM\VC_COM\bin\Debug\VC_COM.exe
+C:\VS\tool\VC_COM\VC_COM\bin\Debug\VC_COM.pdb
+C:\VS\tool\VC_COM\VC_COM\obj\Debug\VC_COM.csprojResolveAssemblyReference.cache
+C:\VS\tool\VC_COM\VC_COM\obj\Debug\VC_COM.exe
+C:\VS\tool\VC_COM\VC_COM\obj\Debug\VC_COM.pdb

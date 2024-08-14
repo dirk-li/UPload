@@ -1,0 +1,9 @@
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\bin\Debug\Bolide motor static torque.exe
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\bin\Debug\Bolide motor static torque.pdb
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\obj\Debug\ResolveAssemblyReference.cache
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\obj\Debug\Bolide_motor_static_torque.Bolide_motor_static_torque.resources
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\obj\Debug\Bolide_motor_static_torque.Properties.Resources.resources
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\obj\Debug\Bolide motor static torque.csproj.GenerateResource.Cache
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\obj\Debug\Bolide motor static torque.exe
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\obj\Debug\Bolide motor static torque.pdb
+C:\dirk\lianxi\Bolide motor static torque\Bolide motor static torque\obj\Debug\Bolide motor static torque.csproj.ResolveComReference.cache

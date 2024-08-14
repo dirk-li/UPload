@@ -1,0 +1,15 @@
+C:\VS\WPF\Outlooksendemail\bin\Debug\Outlooksendemail.exe.config
+C:\VS\WPF\Outlooksendemail\bin\Debug\Outlooksendemail.exe
+C:\VS\WPF\Outlooksendemail\bin\Debug\Outlooksendemail.pdb
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail.csproj.AssemblyReference.cache
+C:\VS\WPF\Outlooksendemail\obj\Debug\MainWindow.g.cs
+C:\VS\WPF\Outlooksendemail\obj\Debug\App.g.cs
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail_MarkupCompile.cache
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail_MarkupCompile.lref
+C:\VS\WPF\Outlooksendemail\obj\Debug\MainWindow.baml
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail.g.resources
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail.Properties.Resources.resources
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail.csproj.GenerateResource.cache
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail.csproj.CoreCompileInputs.cache
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail.exe
+C:\VS\WPF\Outlooksendemail\obj\Debug\Outlooksendemail.pdb

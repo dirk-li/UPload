@@ -1,0 +1,267 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.IO.Ports;
+using inifile;
+
+namespace Bolide_motor_static_torque
+{
+    public partial class Bolide_motor_static_torque : Form
+    {
+        private static SerialPort port;
+        public Bolide_motor_static_torque()
+        {
+            InitializeComponent();
+            opencomport.Text = "打开串口";
+            comboBox1.Text = "COM10";
+        }
+
+        private void Start_btn_Click(object sender, EventArgs e)
+        {
+            result_rtb.Text = "";
+            if (opencomport.Text == "关闭串口")
+            {
+                string currentPath = Directory.GetCurrentDirectory();
+
+                //Pan static friction force
+                string filepath = currentPath + "\\static_torque_spec.ini";
+                string pan_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_force_max_spec", null, filepath);
+                string pan_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_force_min_spec", null, filepath);
+                string[] pan_max_spec_array = new string[] { pan_max_spec };
+                string[] pan_min_spec_array = new string[] { pan_min_spec };
+                string[] panstatictorque = getcomdata("pan static torque");
+                string[] panstatictorque_mergearray = merge_array(panstatictorque,pan_max_spec_array,pan_min_spec_array);
+                double[] panfrictionforce = ToDoubleArray(panstatictorque_mergearray);
+                result_compare(panfrictionforce, "The pan static frictional force");
+
+
+                //Tilt static friction force
+                string tilt_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_force_max_spec", null, filepath);
+                string tilt_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_force_min_spec", null, filepath);
+                string[] tilt_max_spec_array = new string[] { tilt_max_spec };
+                string[] tilt_min_spec_array = new string[] { tilt_min_spec };
+                string[] tiltstatictorque = getcomdata("tilt static torque");
+                string[] tiltstatictorque_mergearray = merge_array(tiltstatictorque,tilt_max_spec_array,tilt_min_spec_array);
+                double[] tiltfrictionforce = ToDoubleArray(tiltstatictorque_mergearray);
+                result_compare(tiltfrictionforce, "The tilt static frictional force");
+
+
+               // pan low speed 
+                string pan_lowspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_lowspeed_max_spec", null, filepath);
+                string pan_lowspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_lowspeed_min_spec", null, filepath);
+                string[] pan_lowspeed_max_spec_array = new string[] { pan_lowspeed_max_spec };
+                string[] pan_lowspeed_min_spec_array = new string[] { pan_lowspeed_min_spec };
+                string[] panlowspeed = getcomdata("pan low speed");
+                string[] panlowspeed_mergearray = merge_array(panlowspeed,pan_lowspeed_max_spec_array,pan_lowspeed_min_spec_array);
+                double[] panlowspeed_value = ToDoubleArray(panlowspeed_mergearray);
+                result_compare(panlowspeed_value, "The pan low speed");
+
+                // pan medium speed 
+                string pan_mediumspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_mediumspeed_max_spec", null, filepath);
+                string pan_mediumspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_mediumspeed_min_spec", null, filepath);
+                string[] pan_mediumspeed_max_spec_array = new string[] { pan_mediumspeed_max_spec };
+                string[] pan_mediumspeed_min_spec_array = new string[] { pan_mediumspeed_min_spec };
+                string[] panmediumspeed = getcomdata("pan medium speed");
+                string[] panmediumspeed_mergearray = merge_array(panmediumspeed, pan_mediumspeed_max_spec_array, pan_mediumspeed_min_spec_array);
+                double[] panmediumspeed_value = ToDoubleArray(panmediumspeed_mergearray);
+                result_compare(panmediumspeed_value, "The pan medium speed");
+                // pan High speed 
+                string pan_highspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_highspeed_max_spec", null, filepath);
+                string pan_highspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_highspeed_min_spec", null, filepath);
+                string[] pan_highspeed_max_spec_array = new string[] { pan_highspeed_max_spec };
+                string[] pan_highspeed_min_spec_array = new string[] { pan_highspeed_min_spec };
+                string[] panhighspeed = getcomdata("pan high speed");
+                string[] panhighspeed_mergearray = merge_array(panhighspeed, pan_highspeed_max_spec_array, pan_highspeed_min_spec_array);
+                double[] panhighspeed_value = ToDoubleArray(panhighspeed_mergearray);
+                result_compare(panhighspeed_value, "The pan high speed");
+
+                // tilt low speed 
+                string tilt_lowspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_lowspeed_max_spec", null, filepath);
+                string tilt_lowspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_lowspeed_min_spec", null, filepath);
+                string[] tilt_lowspeed_max_spec_array = new string[] { tilt_lowspeed_max_spec };
+                string[] tilt_lowspeed_min_spec_array = new string[] { tilt_lowspeed_min_spec };
+                string[] tiltlowspeed = getcomdata("tilt low speed");
+                string[] tiltlowspeed_mergearray = merge_array(tiltlowspeed, tilt_lowspeed_max_spec_array, tilt_lowspeed_min_spec_array);
+                double[] tiltlowspeed_value = ToDoubleArray(tiltlowspeed_mergearray);
+                result_compare(tiltlowspeed_value, "The tilt low speed");
+
+                // tilt medium speed 
+                string tilt_mediumspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_mediumspeed_max_spec", null, filepath);
+                string tilt_mediumspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_mediumspeed_min_spec", null, filepath);
+                string[] tilt_mediumspeed_max_spec_array = new string[] { tilt_mediumspeed_max_spec };
+                string[] tilt_mediumspeed_min_spec_array = new string[] { tilt_mediumspeed_min_spec };
+                string[] tiltmediumspeed = getcomdata("tilt medium speed");
+                string[] tiltmediumspeed_mergearray = merge_array(tiltmediumspeed, tilt_mediumspeed_max_spec_array, tilt_mediumspeed_min_spec_array);
+                double[] tiltmediumspeed_value = ToDoubleArray(tiltmediumspeed_mergearray);
+                result_compare(tiltmediumspeed_value, "The tilt medium speed");
+                // tilt High speed 
+                string tilt_highspeed_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_highspeed_max_spec", null, filepath);
+                string tilt_highspeed_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "tilt_highspeed_min_spec", null, filepath);
+                string[] tilt_highspeed_max_spec_array = new string[] { tilt_highspeed_max_spec };
+                string[] tilt_highspeed_min_spec_array = new string[] { tilt_highspeed_min_spec };
+                string[] tilthighspeed = getcomdata("tilt high speed");
+                string[] tilthighspeed_mergearray = merge_array(tilthighspeed, tilt_highspeed_max_spec_array, tilt_highspeed_min_spec_array);
+                double[] tilthighspeed_value = ToDoubleArray(tilthighspeed_mergearray);
+                result_compare(tilthighspeed_value, "The tilt high speed");
+
+                string result_string=result_rtb.Text;
+                if (result_string.Contains("FAIL"))
+                    {
+                        Result_btn.Text = "FAIL";
+                        Result_btn.BackColor = Color.Red;
+
+                    }
+                    else
+                    {
+                        Result_btn.Text = "PASS";
+                        Result_btn.BackColor = Color.GreenYellow;
+
+                    }
+
+
+                //string[] panlowspeed = new string[] {"123","150","100"};
+               // string[] panmediumspeed = new string[] { "205","250","180" };
+               // string[] panhighspeed = new string[] { "362","400","350" };
+              //  string[] tiltlowspeed = new string[] { "104", "150", "100" };
+              //  string[] tiltmediumspeed = new string[] { "263", "250", "180" };
+              //  string[] tilthighspeed = new string[] { "435", "400", "350" };
+            
+                string[] showitem = new string[] { "VALUE","MAX SPEC","MIN SPEC"};
+                show_datagardview(showitem, panstatictorque_mergearray, tiltstatictorque_mergearray, panmediumspeed_mergearray, panmediumspeed_mergearray, panhighspeed_mergearray, tiltmediumspeed_mergearray, tiltmediumspeed_mergearray, tilthighspeed_mergearray);
+
+            }
+            else
+            {
+                MessageBox.Show("请打开串口");
+            }
+
+
+           
+        }
+        //设置COM 口参数
+        public void SettingCOMPorts()
+        {
+            string[] comportnames = System.IO.Ports.SerialPort.GetPortNames();
+            for (int i = 0; i < comportnames.Length; i++)
+            {
+            }
+            port = new SerialPort(comboBox1.Text);
+            port.BaudRate = 9600;
+            port.DataBits = 8;
+            port.Handshake = Handshake.None;
+            port.Open();
+        }
+        //从COM 口获取数据
+        public static string[] getcomdata(string inputstr)
+        {
+            port.Write(inputstr);
+            System.Threading.Thread.Sleep(100);
+            string recstr = port.ReadExisting();
+            string[] recdate = recstr.Split(' ');
+            return recdate;
+        }
+        //将字符串数组转化成Double 数组 
+        public static double[] ToDoubleArray(string[] strarray)
+        {
+
+            double[] data = new double[strarray.Length];
+
+            for (int i = 0; i < strarray.Length; i++)
+            {
+                data[i] = Convert.ToDouble(strarray[i]);
+
+            }
+            return data;
+        }
+
+        private void opencomport_Click(object sender, EventArgs e)
+        {
+      
+                if (opencomport.Text == "打开串口")
+                {
+
+                    port = new SerialPort(comboBox1.Text);
+                    port.BaudRate = 9600;
+                    port.DataBits = 8;
+                    port.Handshake = Handshake.None;
+                    port.Open();
+                    opencomport.Text = "关闭串口";
+                }
+                else if (opencomport.Text == "关闭串口")
+                {
+                    port.Close();
+                    //portstate();
+                    opencomport.Text = "打开串口";
+                }
+          
+        }
+
+        //比对静态摩擦力
+        public void result_compare(double[] value,string returnstr)
+        {
+                if (value[0] > value[1])
+                {
+                    richshow(returnstr+ " Test FAIL", Color.Red);
+                    return;
+                }
+                else if (value[0] < value[2])
+                {
+                    richshow(returnstr + " Test FAIL", Color.Red);
+                    return;
+                }
+                else
+                {
+                    richshow(returnstr + " Test PASS", Color.Green);
+                }
+        }
+
+        //在richbox 显示每一项测试结果
+        public void richshow(string context,Color color)
+        {
+            result_rtb.SelectionColor = color;
+            result_rtb.AppendText(context+"\r\n");
+ 
+        }
+        //在Griddataview 里显示测试数值 
+        public void show_datagardview(string[] data1, string[] data2, string[] data3, string[] data4, string[] data5, string[] data6, string[] data7, string[] data8, string[] data9)
+        {
+            dataGridView1.Rows.Clear();
+            //dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnMode.AllCells);
+            string[][] data = value(data1, data2, data3, data4, data5, data6, data7, data8, data9);
+            for (int i = 0; i < data1.Length; i++)
+            {
+                dataGridView1.Rows.Add(data[i]);
+            }
+        }
+        public static string[][] value(string[] array1, string[] array2, string[] array3, string[] array4, string[] array5, string[] array6, string[] array7, string[] array8, string[] array9)
+        {
+            string[][] array = new string[3][];
+            for (int i = 0; i < 3; i++)
+            {
+
+                array[i] = new string[] { array1[i], array2[i], array3[i], array6[i], array5[i], array6[i], array7[i], array8[i], array9[i] };
+            }
+            return array;
+        }
+
+        //将MAX，MIN，DATA数组 合并到一个数组
+        public static string[] merge_array(string[] array1,string[] array2,string[] array3 )
+        { 
+            string[] array=new string[3];
+            array[0] = array1[0];
+            array[1] = array2[0];
+            array[2] = array3[0];
+            return array;
+        }
+        private void Result_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

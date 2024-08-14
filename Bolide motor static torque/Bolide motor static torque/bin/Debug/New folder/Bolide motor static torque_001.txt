@@ -1,0 +1,174 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.IO.Ports;
+using inifile;
+
+namespace Bolide_motor_static_torque
+{
+    public partial class Bolide_motor_static_torque : Form
+    {
+        private static SerialPort port;
+        public Bolide_motor_static_torque()
+        {
+            InitializeComponent();
+            opencomport.Text = "打开串口";
+            comboBox1.Text = "COM10";
+        }
+
+        private void Start_btn_Click(object sender, EventArgs e)
+        {
+            if (opencomport.Text == "关闭串口")
+            {
+                string currentPath = Directory.GetCurrentDirectory();
+
+                string filepath = currentPath + "\\static_torque_spec.ini";
+                string pan_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_max_spec", null, filepath);
+                string pan_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_min_spec", null, filepath);
+                string[] pan_max_spec_array = new string[] { pan_max_spec };
+                string[] pan_min_spec_array = new string[] { pan_min_spec };
+                string[] panstatictorque = getcomdata("pan static torque");
+                textBox1.Text = panstatictorque[0];
+                double[] pantorquevalue = ToDoubleArray(panstatictorque);
+                double[] panmaxspec = ToDoubleArray(pan_max_spec_array);
+                double[] panminspec = ToDoubleArray(pan_min_spec_array);
+                pan_result_compare(pantorquevalue, panmaxspec, panminspec);
+
+                string tilt_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_max_spec", null, filepath);
+                string tilt_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_min_spec", null, filepath);
+                string[] tilt_max_spec_array = new string[] { tilt_max_spec };
+                string[] tilt_min_spec_array = new string[] { tilt_min_spec };
+                string[] tiltstatictorque = getcomdata("tilt static torque");
+                textBox2.Text = tiltstatictorque[0];
+                double[] tilttorquevalue = ToDoubleArray(tiltstatictorque);
+                double[] tiltmaxspec = ToDoubleArray(tilt_max_spec_array);
+                double[] tiltminspec = ToDoubleArray(tilt_min_spec_array);
+                tilt_result_compare(tilttorquevalue, tiltmaxspec, tiltminspec);
+                if (textBox1.BackColor == Color.Red | textBox2.BackColor == Color.Red)
+                {
+                    Result_btn.Text = "FAIL";
+                    Result_btn.BackColor = Color.Red;
+                }
+                else
+                {
+                    Result_btn.Text = "PASS";
+                    Result_btn.BackColor = Color.GreenYellow;
+                }
+            }
+            else
+            {
+                MessageBox.Show("请打开串口");
+            }
+
+
+           
+        }
+        public void SettingCOMPorts()
+        {
+            string[] comportnames = System.IO.Ports.SerialPort.GetPortNames();
+            for (int i = 0; i < comportnames.Length; i++)
+            {
+            }
+            port = new SerialPort(comboBox1.Text);
+            port.BaudRate = 9600;
+            port.DataBits = 8;
+            port.Handshake = Handshake.None;
+            port.Open();
+        }
+        public static string[] getcomdata(string inputstr)
+        {
+            port.Write(inputstr);
+            System.Threading.Thread.Sleep(1000);
+            string recstr = port.ReadExisting();
+            string[] recdate = recstr.Split(' ');
+            return recdate;
+        }
+        public static double[] ToDoubleArray(string[] strarray)
+        {
+
+            double[] data = new double[strarray.Length];
+
+            for (int i = 0; i < strarray.Length; i++)
+            {
+                data[i] = Convert.ToDouble(strarray[i]);
+
+            }
+            return data;
+        }
+
+        private void opencomport_Click(object sender, EventArgs e)
+        {
+      
+                if (opencomport.Text == "打开串口")
+                {
+
+                    port = new SerialPort(comboBox1.Text);
+                    port.BaudRate = 9600;
+                    port.DataBits = 8;
+                    port.Handshake = Handshake.None;
+                    port.Open();
+                    opencomport.Text = "关闭串口";
+                }
+                else if (opencomport.Text == "关闭串口")
+                {
+                    port.Close();
+                    //portstate();
+                    opencomport.Text = "打开串口";
+                }
+          
+        }
+        public void pan_result_compare(double[] value, double[] limit_max, double[] limit_min)
+        {
+            for (int i = 0; i < value.Length; i++)
+            {
+                if (value[i] > limit_max[i])
+                {
+                    textBox1.BackColor = Color.Red;
+                    return;
+                }
+                else if (value[i] < limit_min[i])
+                {
+                    textBox1.BackColor = Color.Red;
+                    return;
+                }
+                else
+                {
+                    textBox1.BackColor = Color.GreenYellow;
+                    
+                }
+            }
+        }
+        public void tilt_result_compare(double[] value, double[] limit_max, double[] limit_min)
+        {
+            for (int i = 0; i < value.Length; i++)
+            {
+                if (value[i] > limit_max[i])
+                {
+                    textBox2.BackColor = Color.Red;
+                    return;
+                }
+                else if (value[i] < limit_min[i])
+                {
+                    textBox2.BackColor = Color.Red;
+                    return;
+                }
+                else
+                {
+                    textBox2.BackColor = Color.GreenYellow;
+
+                }
+            }
+        }
+
+        private void Result_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

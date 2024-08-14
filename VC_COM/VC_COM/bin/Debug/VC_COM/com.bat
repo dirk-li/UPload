@@ -1,0 +1,2 @@
+
+VC_COM.exe COM22 9600 Set:100mA

@@ -1,0 +1,18 @@
+c:\users\dli6\documents\visual studio 2015\Projects\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.exe.config
+c:\users\dli6\documents\visual studio 2015\Projects\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.exe
+c:\users\dli6\documents\visual studio 2015\Projects\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.pdb
+c:\users\dli6\documents\visual studio 2015\Projects\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.csprojResolveAssemblyReference.cache
+c:\users\dli6\documents\visual studio 2015\Projects\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.exe
+c:\users\dli6\documents\visual studio 2015\Projects\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.pdb
+C:\VS\tool\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.exe.config
+C:\VS\tool\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.exe
+C:\VS\tool\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.pdb
+C:\VS\tool\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.exe
+C:\VS\tool\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.pdb
+C:\VS\tool\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.csprojResolveAssemblyReference.cache
+E:\VS\VC\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.exe.config
+E:\VS\VC\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.exe
+E:\VS\VC\VC_PLC_COM\VC_PLC_COM\bin\Debug\VC_PLC_COM.pdb
+E:\VS\VC\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.csproj.CoreCompileInputs.cache
+E:\VS\VC\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.exe
+E:\VS\VC\VC_PLC_COM\VC_PLC_COM\obj\Debug\VC_PLC_COM.pdb

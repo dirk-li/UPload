@@ -1,0 +1,211 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.IO.Ports;
+using inifile;
+
+namespace Bolide_motor_static_torque
+{
+    public partial class Bolide_motor_static_torque : Form
+    {
+        private static SerialPort port;
+        public Bolide_motor_static_torque()
+        {
+            InitializeComponent();
+            opencomport.Text = "打开串口";
+            comboBox1.Text = "COM10";
+        }
+
+        private void Start_btn_Click(object sender, EventArgs e)
+        {
+            if (opencomport.Text == "关闭串口")
+            {
+                string currentPath = Directory.GetCurrentDirectory();
+
+                string filepath = currentPath + "\\static_torque_spec.ini";
+                string pan_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_max_spec", null, filepath);
+                string pan_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Pan_min_spec", null, filepath);
+                string[] pan_max_spec_array = new string[] { pan_max_spec };
+                string[] pan_min_spec_array = new string[] { pan_min_spec };
+                string[] panstatictorque = getcomdata("pan static torque");
+                //textBox1.Text = panstatictorque[0];
+                double[] pantorquevalue = ToDoubleArray(panstatictorque);
+                double[] panmaxspec = ToDoubleArray(pan_max_spec_array);
+                double[] panminspec = ToDoubleArray(pan_min_spec_array);
+                pan_result_compare(pantorquevalue, panmaxspec, panminspec);
+
+                string tilt_max_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_max_spec", null, filepath);
+                string tilt_min_spec = inifile.Class1.ReadIniData("static_torque_spec", "Tilt_min_spec", null, filepath);
+                string[] tilt_max_spec_array = new string[] { tilt_max_spec };
+                string[] tilt_min_spec_array = new string[] { tilt_min_spec };
+                string[] tiltstatictorque = getcomdata("tilt static torque");
+               // textBox2.Text = tiltstatictorque[0];
+                double[] tilttorquevalue = ToDoubleArray(tiltstatictorque);
+                double[] tiltmaxspec = ToDoubleArray(tilt_max_spec_array);
+                double[] tiltminspec = ToDoubleArray(tilt_min_spec_array);
+                tilt_result_compare(tilttorquevalue, tiltmaxspec, tiltminspec);
+                //MessageBox.Show(result_rtb.Text);
+                string result_string=result_rtb.Text;
+                if (result_string.Contains("FAIL"))
+                    {
+                        Result_btn.Text = "FAIL";
+                        Result_btn.BackColor = Color.Red;
+
+                    }
+                    else
+                    {
+                        Result_btn.Text = "PASS";
+                        Result_btn.BackColor = Color.GreenYellow;
+
+                    }
+
+
+                string[] panlowspeed = new string[] {"123"};
+                string[] panmediumspeed = new string[] { "205" };
+                string[] panhighspeed = new string[] { "362" };
+                string[] tiltlowspeed = new string[] { "104" };
+                string[] tiltmediumspeed = new string[] { "263" };
+                string[] tilthighspeed = new string[] { "435" };
+                show_datagardview(panstatictorque, tiltstatictorque, panlowspeed, panmediumspeed, panhighspeed, tiltlowspeed, tiltmediumspeed, tilthighspeed);
+
+            }
+            else
+            {
+                MessageBox.Show("请打开串口");
+            }
+
+
+           
+        }
+        public void SettingCOMPorts()
+        {
+            string[] comportnames = System.IO.Ports.SerialPort.GetPortNames();
+            for (int i = 0; i < comportnames.Length; i++)
+            {
+            }
+            port = new SerialPort(comboBox1.Text);
+            port.BaudRate = 9600;
+            port.DataBits = 8;
+            port.Handshake = Handshake.None;
+            port.Open();
+        }
+        public static string[] getcomdata(string inputstr)
+        {
+            port.Write(inputstr);
+            System.Threading.Thread.Sleep(1000);
+            string recstr = port.ReadExisting();
+            string[] recdate = recstr.Split(' ');
+            return recdate;
+        }
+        public static double[] ToDoubleArray(string[] strarray)
+        {
+
+            double[] data = new double[strarray.Length];
+
+            for (int i = 0; i < strarray.Length; i++)
+            {
+                data[i] = Convert.ToDouble(strarray[i]);
+
+            }
+            return data;
+        }
+
+        private void opencomport_Click(object sender, EventArgs e)
+        {
+      
+                if (opencomport.Text == "打开串口")
+                {
+
+                    port = new SerialPort(comboBox1.Text);
+                    port.BaudRate = 9600;
+                    port.DataBits = 8;
+                    port.Handshake = Handshake.None;
+                    port.Open();
+                    opencomport.Text = "关闭串口";
+                }
+                else if (opencomport.Text == "关闭串口")
+                {
+                    port.Close();
+                    //portstate();
+                    opencomport.Text = "打开串口";
+                }
+          
+        }
+        public void pan_result_compare(double[] value, double[] limit_max, double[] limit_min)
+        {
+            for (int i = 0; i < value.Length; i++)
+            {
+                if (value[i] > limit_max[i])
+                {
+                    richshow("The static frictional force of pan Test FAIL", Color.Red);
+                    return;
+                }
+                else if (value[i] < limit_min[i])
+                {
+                    richshow("The static frictional force of pan Test FAIL", Color.Red);
+                    return;
+                }
+                else
+                {
+                    richshow("The static frictional force of pan Test PASS", Color.Green);
+                }
+            }
+        }
+        public void tilt_result_compare(double[] value, double[] limit_max, double[] limit_min)
+        {
+            for (int i = 0; i < value.Length; i++)
+            {
+                if (value[i] > limit_max[i])
+                {
+                    richshow("The static frictional force of tilt Test FAIL", Color.Red);
+                    return;
+                }
+                else if (value[i] < limit_min[i])
+                {
+                    richshow("The static frictional force of tilt Test FAIL", Color.Red);
+                    return;
+                }
+                else
+                {
+                    richshow("The static frictional force of tilt Test PASS", Color.Green);
+                }
+            }
+        }
+        public void richshow(string context,Color color)
+        {
+            result_rtb.SelectionColor = color;
+            result_rtb.AppendText(context+"\r\n");
+ 
+        }
+        public void show_datagardview(string[] data1, string[] data2, string[] data3, string[] data4, string[] data5, string[] data6, string[] data7, string[] data8)
+        {
+            dataGridView1.Rows.Clear();
+            //dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnMode.AllCells);
+            string[][] data = value(data1, data2, data3, data4, data5, data6, data7, data8);
+            for (int i = 0; i < data1.Length; i++)
+            {
+                dataGridView1.Rows.Add(data[i]);
+            }
+        }
+        public static string[][] value(string[] array1, string[] array2, string[] array3, string[] array4, string[] array5, string[] array6, string[] array7, string[] array8)
+        {
+            string[][] array = new string[1][];
+            for (int i = 0; i < 1; i++)
+            {
+
+                array[i] = new string[] { array1[i], array2[i], array3[i], array6[i], array5[i], array6[i], array7[i], array8[i] };
+            }
+            return array;
+        }
+        private void Result_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
