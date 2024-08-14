@@ -1,0 +1,10 @@
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\bin\Debug\Backup_Tescam_Log.exe.config
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\bin\Debug\Backup_Tescam_Log.exe
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\bin\Debug\Backup_Tescam_Log.pdb
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\obj\Debug\Backup_Tescam_Log.csproj.AssemblyReference.cache
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\obj\Debug\Backup_Tescam_Log.Form1.resources
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\obj\Debug\Backup_Tescam_Log.Properties.Resources.resources
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\obj\Debug\Backup_Tescam_Log.csproj.GenerateResource.cache
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\obj\Debug\Backup_Tescam_Log.csproj.CoreCompileInputs.cache
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\obj\Debug\Backup_Tescam_Log.exe
+E:\VS\others\Backup_Tescam_Log\Backup_Tescam_Log\obj\Debug\Backup_Tescam_Log.pdb

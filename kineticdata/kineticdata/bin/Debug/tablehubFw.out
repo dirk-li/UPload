@@ -1,0 +1,16 @@
+[Outputs]
+Status=0
+ReturnCode=0
+Message=OK!
+Headers=tableFwversion
+Values=  1.1.73    
+
+
+lowlimit= 1.1.73    
+UpLimit=1.1.73
+TargetLimit=1.1.73
+
+
+
+
+

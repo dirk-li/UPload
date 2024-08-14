@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LogParserAndTransfer" GeneratedClassName="AppSetting">
+  <Profiles />
+  <Settings>
+    <Setting Name="YoungEnoughTimeSpan" Type="System.TimeSpan" Scope="User">
+      <Value Profile="(Default)">1.00:00:00</Value>
+    </Setting>
+    <Setting Name="ScanInfoFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ScannedInfo.json</Value>
+    </Setting>
+    <Setting Name="TestPlatform" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TestCam</Value>
+    </Setting>
+    <Setting Name="TestCamSNLen" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="KineticSNLen" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="OutputFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Crola\</Value>
+    </Setting>
+    <Setting Name="ScanFileType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*.csv</Value>
+    </Setting>
+    <Setting Name="ExcludeFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">_copy,SNForLogService,AUTO_CLEAN,Testcam_automation</Value>
+    </Setting>
+    <Setting Name="IsGetSNColumnNameFromJson" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsGetTestTimeFromAccessaryFile" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Bak" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\tstplan,C:\\CSV_LOG</Value>
+    </Setting>
+    <Setting Name="DBServerIP1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">aws41eispprod.cluster-cbdfio6hbo5q.rds.cn-north-1.amazonaws.com.cn</Value>
+    </Setting>
+    <Setting Name="DBServerPort1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="DBAccount1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">suzhoueis</Value>
+    </Setting>
+    <Setting Name="DBServerIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">aws41eisdbprod1.cbdfio6hbo5q.rds.cn-north-1.amazonaws.com.cn</Value>
+    </Setting>
+    <Setting Name="suzhoueis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">suzhoueis</Value>
+    </Setting>
+    <Setting Name="DBServerPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="DBPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SuzHouE!$</Value>
+    </Setting>
+    <Setting Name="DBPassword1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SuzHouE!$</Value>
+    </Setting>
+    <Setting Name="Logitech1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">suzhoueis</Value>
+    </Setting>
+    <Setting Name="DBAccount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">suzhoueis2</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

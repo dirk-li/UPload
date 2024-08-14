@@ -1,0 +1,15 @@
+[inputs]
+Option=Send
+SCPICmd="MEAS:VOLT:DC? 100, 0.001"
+COMPort="3"
+ShowCFG=0
+DelayWaitEcho=2000
+outputFile=TP117.out
+logfile=c:\UltimateScpiCmd.log
+ExitPause=FALSE
+Headers=TP117
+UpLimit=50.0
+LowLimit=46.0
+;TargetLimit=5.5
+
+

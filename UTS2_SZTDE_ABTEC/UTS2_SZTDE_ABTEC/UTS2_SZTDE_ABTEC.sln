@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTS2_SZTDE_ABTEC", "UTS2_SZTDE_ABTEC\UTS2_SZTDE_ABTEC.csproj", "{8F762C83-63D8-4BB2-BC75-5C114011360F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F762C83-63D8-4BB2-BC75-5C114011360F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F762C83-63D8-4BB2-BC75-5C114011360F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F762C83-63D8-4BB2-BC75-5C114011360F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F762C83-63D8-4BB2-BC75-5C114011360F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0329A7AB-0780-45ED-B19D-D5B8E8D6E528}
+	EndGlobalSection
+EndGlobal

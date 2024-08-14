@@ -1,0 +1,15 @@
+[Outputs]
+Status=0
+ReturnCode=0
+Message=OK!
+Headers=tablehubmacread
+Values=88C626531E20
+
+lowlimit=N/A    
+UpLimit=N/A
+TargetLimit=
+
+
+
+
+

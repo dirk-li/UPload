@@ -1,0 +1,9 @@
+[inputs]
+Option=
+MovingDelay=4000
+byte1=01
+ 
+Headers=UID
+lowLimit=N/A
+UpLimit=N/A
+TargetLimit=

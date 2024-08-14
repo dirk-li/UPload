@@ -1,0 +1,12 @@
+[inputs]
+Option=wifimac
+MovingDelay=4000
+outputFile=tablehubFw.out
+byte1=01
+
+Headers=tableFwversion
+lowlimit= 1.1.73    
+UpLimit=1.1.73
+TargetLimit=1.1.73
+LogFile=test.log
+VarResultSummary=

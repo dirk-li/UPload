@@ -1,0 +1,15 @@
+[Outputs]
+Status=0
+ReturnCode=0
+Message=OK!
+Headers=TP117
+Values=47.8
+
+LowLimit=46.0
+UpLimit=50.0
+;TargetLimit=5.5
+
+
+
+
+

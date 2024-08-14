@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clsUser xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <userDB>astro</userDB>
+  <userId>237000</userId>
+  <userName>Milo</userName>
+  <userPassword>MTIzNDU2</userPassword>
+  <userDepartment>MEC-TE</userDepartment>
+  <userEmail>mxu3@logitech.com</userEmail>
+  <userPermission>AaU95/hDI9o=</userPermission>
+  <userTime>2024-06-13 03:53:46</userTime>
+</clsUser>

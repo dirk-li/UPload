@@ -1,0 +1,6 @@
+C:\VS\tool\kineticdata\kineticdata\bin\Debug\kineticdata.exe.config
+C:\VS\tool\kineticdata\kineticdata\bin\Debug\kineticdata.exe
+C:\VS\tool\kineticdata\kineticdata\bin\Debug\kineticdata.pdb
+C:\VS\tool\kineticdata\kineticdata\obj\Debug\kineticdata.csprojResolveAssemblyReference.cache
+C:\VS\tool\kineticdata\kineticdata\obj\Debug\kineticdata.exe
+C:\VS\tool\kineticdata\kineticdata\obj\Debug\kineticdata.pdb

@@ -1,0 +1,15 @@
+[Outputs]
+Status=0
+ReturnCode=0
+Message=OK!
+Headers=White_ColorClear,White_Red,White_Green,White_Blue
+Values= 130,41,34, 30
+
+LowLimit=10,3,3,3     
+UpLimit= 500,100,100,100
+TargetLimit=130,43,41,33
+
+
+
+
+

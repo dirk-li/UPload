@@ -1,0 +1,11 @@
+[inputs]
+Headers=White_ColorClear,White_Red,White_Green,White_Blue
+LowLimit=10,3,3,3     
+UpLimit= 500,100,100,100
+TargetLimit=130,43,41,33
+Device="Logitech camera"
+Outputfile=color_out.out
+
+
+
+

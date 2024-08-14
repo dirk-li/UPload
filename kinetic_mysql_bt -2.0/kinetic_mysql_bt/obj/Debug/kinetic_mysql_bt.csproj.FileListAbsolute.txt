@@ -1,0 +1,12 @@
+C:\VS\tool\kinetic_mysql_bt\kinetic_mysql_bt\bin\Debug\kinetic_mysql_bt.exe.config
+C:\VS\tool\kinetic_mysql_bt\kinetic_mysql_bt\bin\Debug\kinetic_mysql_bt.exe
+C:\VS\tool\kinetic_mysql_bt\kinetic_mysql_bt\bin\Debug\kinetic_mysql_bt.pdb
+C:\VS\tool\kinetic_mysql_bt\kinetic_mysql_bt\obj\Debug\kinetic_mysql_bt.csprojResolveAssemblyReference.cache
+C:\VS\tool\kinetic_mysql_bt\kinetic_mysql_bt\obj\Debug\kinetic_mysql_bt.exe
+C:\VS\tool\kinetic_mysql_bt\kinetic_mysql_bt\obj\Debug\kinetic_mysql_bt.pdb
+C:\VS\tool\kinetic_mysql_bt -2.0\kinetic_mysql_bt\bin\Debug\kinetic_mysql_bt.exe.config
+C:\VS\tool\kinetic_mysql_bt -2.0\kinetic_mysql_bt\obj\Debug\kinetic_mysql_bt.exe
+C:\VS\tool\kinetic_mysql_bt -2.0\kinetic_mysql_bt\obj\Debug\kinetic_mysql_bt.pdb
+C:\VS\tool\kinetic_mysql_bt -2.0\kinetic_mysql_bt\bin\Debug\kinetic_mysql_bt.exe
+C:\VS\tool\kinetic_mysql_bt -2.0\kinetic_mysql_bt\bin\Debug\kinetic_mysql_bt.pdb
+C:\VS\tool\kinetic_mysql_bt -2.0\kinetic_mysql_bt\obj\Debug\kinetic_mysql_bt.csprojResolveAssemblyReference.cache

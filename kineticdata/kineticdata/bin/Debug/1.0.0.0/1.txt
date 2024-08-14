@@ -1,0 +1,3 @@
+kineticdata.exe /doubledata POWER117.in power117_result.txt 
+kineticdata.exe /strdata tablehubFw.in tablefw_result.txt 
+kineticdata.exe /intdata color.in color_result.txt 

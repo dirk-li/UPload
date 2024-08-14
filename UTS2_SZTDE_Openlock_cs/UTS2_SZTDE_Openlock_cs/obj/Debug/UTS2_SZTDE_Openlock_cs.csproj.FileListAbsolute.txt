@@ -1,0 +1,6 @@
+D:\VS\UTS2\UTS2_SZTDE_Openlock_cs\UTS2_SZTDE_Openlock_cs\bin\Debug\UTS2_SZTDE_Openlock_cs.dll
+D:\VS\UTS2\UTS2_SZTDE_Openlock_cs\UTS2_SZTDE_Openlock_cs\bin\Debug\UTS2_SZTDE_Openlock_cs.pdb
+D:\VS\UTS2\UTS2_SZTDE_Openlock_cs\UTS2_SZTDE_Openlock_cs\obj\Debug\UTS2_SZTDE_Openlock_cs.csproj.CoreCompileInputs.cache
+D:\VS\UTS2\UTS2_SZTDE_Openlock_cs\UTS2_SZTDE_Openlock_cs\obj\Debug\UTS2_SZTDE_Openlock_cs.dll
+D:\VS\UTS2\UTS2_SZTDE_Openlock_cs\UTS2_SZTDE_Openlock_cs\obj\Debug\UTS2_SZTDE_Openlock_cs.pdb
+D:\VS\UTS2\UTS2_SZTDE_Openlock_cs\UTS2_SZTDE_Openlock_cs\obj\Debug\UTS2_SZTDE_Openlock_cs.csproj.AssemblyReference.cache

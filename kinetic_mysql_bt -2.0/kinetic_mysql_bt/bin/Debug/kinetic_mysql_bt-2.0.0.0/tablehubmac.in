@@ -1,0 +1,12 @@
+[inputs]
+Option=wifimac
+MovingDelay=4000
+outputFile=tablehubmacread.out
+byte1=01
+
+Headers=tablehubmacread
+lowlimit=N/A    
+UpLimit=N/A
+TargetLimit=
+LogFile=test.log
+VarResultSummary=
