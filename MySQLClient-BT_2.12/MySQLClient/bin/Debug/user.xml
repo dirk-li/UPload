@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clsUser xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <userServer>IDC</userServer>
+  <userDB>sartom</userDB>
+  <userId>235905</userId>
+  <userName>Dirk</userName>
+  <userPassword>MTIzNDU2</userPassword>
+  <userDepartment>MED-TE</userDepartment>
+  <userEmail>dli6@logitech.com</userEmail>
+  <userPermission>xxP3Aou8KFY=</userPermission>
+  <userTime>2024-08-14 03:07:03</userTime>
+</clsUser>

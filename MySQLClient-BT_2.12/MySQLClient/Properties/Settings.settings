@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MySQLClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="constr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=aws41sztedb01.corp.logitech.com;User ID=root;Password=logitech;</Value>
+    </Setting>
+    <Setting Name="constrIDC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=cn02mecbt01.corp.logitech.com;User ID=root;Password=logitech;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

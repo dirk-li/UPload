@@ -1,0 +1,465 @@
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.GroupForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.ImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.NewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.csprojResolveAssemblyReference.cache
+C:\Users\mxu3\Desktop\Logitech Code\SQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.ExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.csprojResolveAssemblyReference.cache
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.ExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.GroupForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.ImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.NewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.csprojResolveAssemblyReference.cache
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.csprojResolveAssemblyReference.cache
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.2 - Copy\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.csprojResolveAssemblyReference.cache
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\Users\dli6\Desktop\tool\MySQLClient - V1.0.0.4\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.csprojResolveAssemblyReference.cache
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.5\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\Users\mxu3\Desktop\Logitech Code\MySQLClient\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.exe
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\MySQLClient.exe
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.csprojResolveAssemblyReference.cache
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.6\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.exe
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\bin\Debug\MySQLClient.exe
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.csprojResolveAssemblyReference.cache
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.BTRemoveTableForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.ConfirmRemovePasswordForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.Cache
+C:\VS\tool\MySQLClient - V1.0.0.7_A20\MySQLClient\obj\Debug\MySQLClient.BTRemove_AddreesForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.csprojAssemblyReference.cache
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemoveTableForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemove_AddreesForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfirmRemovePasswordForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.cache
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CoreCompileInputs.cache
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CopyComplete
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.exe
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\VS\MySQLClient - V2.0.05(BT Address)\MySQLClient\obj\Debug\MySQLClient.MailSendForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.csprojAssemblyReference.cache
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemoveTableForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemove_AddreesForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfirmRemovePasswordForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.MailSendForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.cache
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CoreCompileInputs.cache
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CopyComplete
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.exe
+C:\VS\MySQLClient - V2.0.0.6(BT Address)\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.csprojAssemblyReference.cache
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemoveTableForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemove_AddreesForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfirmRemovePasswordForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.MailSendForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.cache
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CoreCompileInputs.cache
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CopyComplete
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\bin\Debug\MySql.Data.xml
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.7(BT Address)\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemoveTableForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemove_AddreesForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfirmRemovePasswordForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.MailSendForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.cache
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CoreCompileInputs.cache
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CopyComplete
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.8(BT Address)\MySQLClient\obj\Debug\MySQLClient.csprojAssemblyReference.cache
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\bin\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemoveTableForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTRemove_AddreesForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfirmRemovePasswordForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.MailSendForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.cache
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.exe
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.pdb
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CoreCompileInputs.cache
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.csproj.CopyComplete
+C:\Users\mxu3\Desktop\TDE\meridian\MySQLClient - V2.0.0.9(BT Address)\MySQLClient\obj\Debug\MySQLClient.csprojAssemblyReference.cache
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\MySQLClient.exe.config
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\MySQLClient.exe
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\MySQLClient.pdb
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\BouncyCastle.Crypto.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\Google.Protobuf.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\K4os.Compression.LZ4.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\K4os.Hash.xxHash.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\MySql.Data.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\System.Buffers.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\System.Memory.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\Ubiety.Dns.Core.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\ZstdNet.dll
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\BouncyCastle.Crypto.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\Google.Protobuf.pdb
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\Google.Protobuf.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\K4os.Compression.LZ4.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\K4os.Hash.xxHash.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\MySql.Data.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\System.Buffers.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\System.Memory.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.csproj.AssemblyReference.cache
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.BTRemoveTableForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.BTRemove_AddreesForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.ConfirmRemovePasswordForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.MailSendForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.cache
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.csproj.CoreCompileInputs.cache
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.csproj.CopyComplete
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.exe
+C:\VS\Mysql\MySQLClient-BT\MySQLClient\obj\Debug\MySQLClient.pdb
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\MySQLClient.exe.config
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\MySQLClient.exe
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\MySQLClient.pdb
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\BouncyCastle.Crypto.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\Google.Protobuf.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\K4os.Compression.LZ4.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\K4os.Hash.xxHash.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\MySql.Data.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\System.Buffers.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\System.Memory.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\Ubiety.Dns.Core.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\ZstdNet.dll
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\BouncyCastle.Crypto.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\Google.Protobuf.pdb
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\Google.Protobuf.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\K4os.Compression.LZ4.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\K4os.Hash.xxHash.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\MySql.Data.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\System.Buffers.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\System.Memory.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.csproj.AssemblyReference.cache
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.BTImportForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.BTRemoveTableForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.BTRemove_AddreesForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.ConfirmRemovePasswordForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.MailSendForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.WGNewProductForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.ConfigForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.BTExportForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.GSExportForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.BTQueryForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.GSQueryForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.GSImportForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.LoginForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.MainForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.BTNewProductForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.GSNewProductForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.PersonalForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.Properties.Resources.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.UserInfoForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.WGQueryForm.resources
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.csproj.GenerateResource.cache
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.csproj.CoreCompileInputs.cache
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.csproj.CopyComplete
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.exe
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.pdb
+D:\VS\Mysql\MySQLClient-BT_2.12\MySQLClient\obj\Debug\MySQLClient.MCIDSNUploadForm.resources
